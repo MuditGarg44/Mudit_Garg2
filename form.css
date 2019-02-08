@@ -1,0 +1,142 @@
+.outermost
+{
+	padding-left:4%;
+	padding-right:4%;
+}
+
+.div2
+{
+	margin: auto;
+}
+.div2:after{
+ content: "";
+  display: table;
+  clear: both;
+}
+.div3
+{
+	margin: auto;
+	border-radius: 5px;
+	border: 2px solid #BBC0CA;
+	border-radius:5px;
+}
+.div3outer
+{
+	width:45%;
+	padding-left : 25px;
+	padding-right :25px;
+	margin : auto;
+}
+
+.div4
+{
+	background-color: #BBC0CA;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left : 25px;
+	padding-right : 25px;
+}
+.div4outer
+{
+	background-color: #BBC0CA;
+}
+.div5
+{
+	padding-left : 25px;
+	padding-right : 25px;
+	padding-top:10px;
+	padding-bottom:10px;
+	
+}
+.div6
+{	padding-left : 25px;
+	padding-right : 25px;
+
+	background-color: #EDEEF1;
+	padding-top:25px;
+	padding-bottom:25px;
+	
+}
+
+
+.span1
+{
+	float: left;
+	color: #00C79C;
+}
+.span2
+{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	float: right;
+}
+.span3
+{
+	width: 10%;
+	padding-left:20px;
+	color: #00C79C;
+}
+.txt1
+{
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+.txt2
+{
+	width:130px;
+	margin-bottom: 10px;
+}
+.control
+{
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.OS
+{
+	width: 100%;
+	background-color: #00C79C;
+	color: white;
+	height: 35px;
+	border-radius: 5px;
+	border-style: hidden;
+	padding-left:10px;
+	margin-top:5px;
+	margin-bottom:15px;
+}
+.outerlicense
+{
+	margin-bottom:10px;
+}
+.license
+{
+	margin-right:200px;
+}
+.upload
+{
+	width: 100%;
+	box-sizing: border-box;
+
+}
+.sendbtn
+{
+	background-color: #00C79C;
+	border-radius:5px;
+	height:45px;
+	color: white;
+	font-size:20px;
+	float: right;
+
+}
+.div6:after{
+ content: "";
+  display: table;
+  clear: both;
+} 
+hr
+{
+ color: #EDEEF1;
+ margin-bottom: 20px;
+}
+
