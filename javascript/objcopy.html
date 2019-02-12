@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+div
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+</style>
+<script type="text/javascript">
+
+
+
+
+function func()
+{	
+	var name = document.getElementById("txtname").value;
+	var age = document.getElementById("txtage").value;
+	var mobile = document.getElementById("txtmobile").value;
+
+	var obj1 = { EmpName : name, EmpAge : age, EmpMobile : mobile };
+	var itr;
+	var obj2 = { EmpName : null, EmpAge : null, EmpMobile : null };
+	
+	for(itr in obj1)
+	{
+		obj2[itr] = obj1[itr];
+	}
+
+	document.getElementById("div2").innerHTML = "In obj2, Employee name is " + obj2.EmpName + ", Age is " + obj2.EmpAge + ", Mobile no. is " + obj2.EmpMobile ;
+	console.log(obj2);
+
+	
+}
+
+
+</script>	
+
+</head>
+<body>
+<form>
+
+	<div id="div1"> Employee Name:  <input type="text" id="txtname" required> <br/>
+			Employee Age:   <input type="text" id="txtage" required> <br/>
+			Employee Mobile:<input type="text" id="txtmobile" required><br/>
+			<input type="button" value="Copy" onclick="func()">
+	</div>
+	<div id="div2"> </div>
+
+
+</form>
+</body>
+</html>
+
+

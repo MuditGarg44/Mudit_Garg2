@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+
+function pallin()
+{	
+	var str = document.getElementById("txt1").value;
+	var rev = str.split("");
+	var rev = rev.reverse();
+	var rev = rev.join("");
+	if(str == rev)
+	{
+		var text = "String IS pallindrome";
+	}
+	else
+	{
+		var text = "String is NOT pallindrome";
+	}
+	//alert(text);
+	document.getElementById("div2").innerHTML = text;
+}
+
+</script>
+
+</head>
+<body>
+<form>
+
+<div id="div1"> Enter a string <input type="text" id="txt1" required> <input type="submit" value="submit" onclick="pallin(); return false;"> </div>
+<div id="div2"> </div>
+
+
+</form>
+</body>
+</html>
+
+

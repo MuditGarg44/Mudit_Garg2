@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+
+
+</head>
+
+<body>
+<div>
+<p id="divid"> </p>
+</div>
+<script type="text/javascript">
+
+var amount = prompt("Enter Amount");
+var rate = prompt("Enter rate of interest");
+var time = prompt("Enter number of years");
+var si = (amount*rate*time)/100;
+//alert("S.I is " + (amount*rate*time)/100); 
+
+document.getElementById("divid").innerHTML = si;
+
+</script>
+</body>
+</html>

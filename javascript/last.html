@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+div
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left : 30px;
+	padding-right: 30px;
+}
+
+.group, .increment, #div2
+{
+	display: none;
+}
+
+</style>
+<script type="text/javascript">
+
+var name,age,salary,dob;
+var obj1= new Array();
+
+
+
+function add()
+{	
+	name = document.getElementById("txtname").value;
+	age = document.getElementById("txtage").value;
+	salary = document.getElementById("txtsalary").value;
+	dob = document.getElementById("txtdob").value;
+	
+	var obj2 = { EmpName : name, EmpAge : age, EmpSalary : salary, EmpDob : dob };
+	obj1.push(obj2);
+	document.getElementById("txtname").value = "";
+	document.getElementById("txtage").value = "";
+	document.getElementById("txtsalary").value = "";
+	document.getElementById("txtdob").value = "";
+}
+
+function filter()
+{
+	document.getElementById("div3").style.cssText = 'display:none;';
+	document.getElementById("div4").style.cssText = 'display:none;';
+	document.getElementById("div2").style.cssText = 'display:inline-flex;justify-content:space-between;padding:20px;';
+	var itr;
+	for(itr in obj1)
+	{
+		if(obj1[itr].EmpSalary > 5000)
+		{
+			var ins = document.getElementById("div2");
+			ins.insertAdjacentHTML("beforeend", "<div> " + obj1[itr].EmpName + "</div>");
+		}
+	}
+}
+
+function group()
+{
+	document.getElementById("div2").style.cssText = 'display:none;';
+	document.getElementById("div4").style.cssText = 'display:none;';
+	document.getElementById("div3").style.cssText = 'display:inline-flex;justify-content:space-between;padding:20px;';
+
+	var itr;
+	document.getElementById("lessorequal10").innerHTML="";
+	document.getElementById("morethan10").innerHTML="";
+	document.getElementById("morethan20").innerHTML="";
+	for(itr in obj1)
+	{
+		document.getElementById("div3").style.cssText = 'display:inline-flex;justify-content:space-between;padding:20px;';
+		if(obj1[itr].EmpAge <= 10)
+		{
+			var ins = document.getElementById("lessorequal10");
+			ins.insertAdjacentHTML("beforeend", "<p> " + obj1[itr].EmpName + "<p>");
+
+		}
+		else if(obj1[itr].EmpAge > 10 && obj1[itr].EmpAge <=20)
+		{
+			var ins = document.getElementById("morethan10");
+			ins.insertAdjacentHTML("beforeend", "<p> " + obj1[itr].EmpName + "<p>");
+		}
+		else
+		{
+			var ins = document.getElementById("morethan20");
+			ins.insertAdjacentHTML("beforeend", "<p> " + obj1[itr].EmpName + "<p>");
+		}
+	}
+			
+}
+
+function increment()
+{
+	document.getElementById("div2").style.cssText = 'display:none;';
+	document.getElementById("div3").style.cssText = 'display:none;';
+	document.getElementById("div4").style.cssText = 'display:inline-flex;justify-content:space-between;padding:20px;';
+	
+
+	var itr;
+	document.getElementById("ename").innerHTML="";
+	document.getElementById("eage").innerHTML="";
+	document.getElementById("esal").innerHTML="";
+	document.getElementById("einc").innerHTML="";
+
+	for(itr in obj1)
+	{
+		document.getElementById("div4").style.cssText = 'display:inline-flex;justify-content:space-between;padding:20px;width:90%;';
+		if(obj1[itr].EmpSalary < 1000 && obj1[itr].EmpAge > 20)
+		{
+				
+			var ins = document.getElementById("ename");
+			ins.insertAdjacentHTML("beforeend", "<p> " + obj1[itr].EmpName + "<p>");
+
+			ins = document.getElementById("eage");
+			ins.insertAdjacentHTML("beforeend", "<p> " + obj1[itr].EmpAge + "<p>");
+
+			ins = document.getElementById("esal");
+			ins.insertAdjacentHTML("beforeend", "<p> " + obj1[itr].EmpSalary + "<p>");
+			
+			ins = document.getElementById("einc");
+			obj1[itr].EmpSalary = obj1[itr].EmpSalary * 5; 
+			ins.insertAdjacentHTML("beforeend", "<p> " + obj1[itr].EmpSalary + "<p>");
+		}
+	}
+}
+
+
+
+console.log(obj1);
+
+
+
+
+</script>	
+
+</head>
+<body>
+<form>
+
+	<div id="div1"> Employee Name:  <input type="text" id="txtname"> <br/>
+			Employee Age:   <input type="text" id="txtage" > <br/>
+			Employee Salary:<input type="text" id="txtsalary"><br/>
+			Employee DOB:   <input type="date" id="txtdob" > <br/>
+			<input type="button" value="Add" onclick="add()">
+			<input type="button" value="Filter" onclick="filter()">
+			<input type="button" value="Group" onclick="group()">
+			<input type="button" value="Increment" onclick="increment()">
+			
+	</div>
+	<div id="div2"> </div>
+	<div id="div3" class="group">
+		<div>
+			<h3> Less than or equal to 10 </h3>
+			<div id="lessorequal10"> </div>
+		</div>
+		<div>
+			<h3> Between 11 to 20 </h3>
+			<div id="morethan10"> </div>
+		</div>
+		<div>
+			<h3> More than 20 </h3>
+			<div id="morethan20"> </div>
+		</div>
+	</div> </div>
+	<div id="div4" class="increment">
+	
+		<div>
+			<h4>Employee Name</h4>
+			<div id="ename"> </div>
+		</div>
+		<div>
+			<h4>Employee Age</h4>
+			<div id="eage"> </div>
+		</div>
+		<div>
+			<h4>Salary</h4>
+			<div id="esal"> </div>
+		</div>
+		<div>
+			<h4>After Increment</h4>
+			<div id="einc"> </div>
+		</div>
+		
+	</div>
+
+
+
+</form>
+</body>
+</html>
+
+
