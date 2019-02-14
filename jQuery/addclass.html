@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<style type="text/css">
+		.styling{
+			color: red;
+			font-weight: bold;
+			font-size: 25px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="test2">
+		<p> This is test2 div  </p>
+		<button> Click to add styling class </button>
+	</div>
+	<script>
+		$(document).ready(function() {
+			$("button").click(function(){
+				$("#test2").addClass("styling");
+			})
+		})
+	</script>
+</body>
+</html>

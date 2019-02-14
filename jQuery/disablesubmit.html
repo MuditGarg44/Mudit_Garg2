@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		
+	</script>
+
+</head>
+<body>
+
+	<form>
+		<p> <input type="submit" value="Submit" id="sub" disabled="false" > </p>
+		<p> <button>Click to disable submit button</button></p>
+		<script>
+			$(document).ready(function(){
+
+				$("button").click(function(){
+				$("#sub").attr('disabled',true);
+				})
+			})	
+		</script>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		
+	</script>
+
+</head>
+<body>
+		<div>
+			 <p><button id="main">Click it</button> </p>
+
+		</div>
+		<script>
+			$(document).ready(function(){
+				var n = 0;
+
+				$("p").on('click','button', function(){
+					$("p").append("<button id='button"+n+"'> button " +n+" from "+ this.id + " </button>");
+					n++;
+				})
+			})	;
+		</script>
+</body>
+</html>

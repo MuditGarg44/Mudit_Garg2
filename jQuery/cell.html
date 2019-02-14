@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    
+  </script>
+  <style>
+  div
+  {
+    padding:30px;
+  }
+  .tab
+  {
+  	padding: 10px;
+  	border-spacing: 10px;
+  	font-size:20px;
+  }
+  .change
+  {
+  	background-color: red;
+  }
+</style>
+
+</head>
+<body>
+
+	<table class="tab">
+		<tr>
+			<td> 5 </td>
+			<td> 11 </td>
+			<td> 6 </td>
+		</tr>
+		<tr>
+			<td> 25 </td>
+			<td> 3 </td>
+			<td> 19 </td>
+		</tr>		<tr>
+			<td> 5 </td>
+			<td> 89 </td>
+			<td> 6 </td>
+		</tr>
+	</table>
+	<script>
+		$(document).ready(function(){
+			var count=0;
+			$("tr").children().each(function(){
+				var t = $(this).text();
+				
+				if(t>10)
+				{
+					this.id="col" + count;
+					$('#'+this.id).css({"background-color" : "red"});
+					count++;				
+				}
+			})
+		})
+	</script>
+
+</body>
+</html>

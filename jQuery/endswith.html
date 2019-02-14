@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<style type="text/css">
+		div
+		{
+			padding:10px;
+			size : 30px;
+			color: red;
+		}
+
+		.inner1, .inner2{
+			display: inline-flex;	
+			width : 50%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="outermost">
+		<div class="inner1">
+			<div class="inner1div">
+				<p> Class name inner1div </p>
+			</div>
+			<div class="inner1divnew">
+				<p> Class name inner1divnew </p>
+			</div>
+		</div>
+		<div class="inner2">
+			<div class="inner2div">
+				<p> Class name inner2div </p>
+			</div>
+			<div class="inner2divnew">
+				<p> Class name inner2divnew </p>
+			</div>
+		</div>
+	</div>
+	<button> Click to change css </button>
+</body>
+</html>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			$("button").click(function(){
+				$("[class$=new").css({"color" : "blue", "size" : "30px", "font-weight" : "bold"});
+			})
+		})
+	</script>
+</body>
+</html>

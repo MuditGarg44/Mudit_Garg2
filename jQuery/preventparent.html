@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    
+  </script>
+  <style>
+  div
+  {
+
+  	font-size: 30px;
+    padding:30px;
+  }
+</style>
+
+</head>
+<body>
+	<div>
+		<p> inside parent div </p>
+		<ul>
+			<li> Hyuga </li>
+			<li> Uchiha </li>
+			<li> Uzumaki </li>
+		</ul>
+	</div>
+	<script>
+		$("div").click(function(e){
+			if(e.target!= this)
+				return
+			alert("div clicked");
+
+		})
+
+	</script>
+
+</body>
+</html>

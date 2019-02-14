@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    
+  </script>
+  <style>
+ 
+  div
+  {
+    padding:30px;
+  }
+</style>
+
+</head>
+<body>
+	<div class="outermost">
+		<div class="slidediv">
+			
+		</div>
+	
+	</div>
+	<script>
+		$(document).ready(function(){
+        	let imageArr=[];
+        	let i=0;
+        	imageArr.push("madara.jpg");
+        	imageArr.push("obito.jpg");
+        	imageArr.push("pain.png");
+
+	        setInterval(function () {
+    	        i++;
+        	    if (i == imageArr.length) {
+            	        i = 0;
+               	}
+                $(".slidediv").fadeOut("slow", function () {
+                $(this).css({"background-image": "url(" + imageArr[i] + ")","width":"500px","height":"400px"});
+                $(this).fadeIn("slow");
+                });
+        }, 1000);
+
+
+    }
+    
+)
+
+	</script>
+</body>
+</html>
+
+
+

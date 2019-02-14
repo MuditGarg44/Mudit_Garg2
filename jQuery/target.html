@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		
+	</script>
+
+</head>
+<body>
+		<div id="main">
+			<p>One man's reality is </p>
+			<p class="target">Another man's Illusion</p>
+			<p> <button>Click to change font size</button></p>
+
+		</div>
+		<script>
+			$(document).ready(function(){
+
+				$("button").click(function(){
+				$("#main > .target").css({"font-size":"40px"});
+				});
+			})	;
+		</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    
+  </script>
+  <style>
+  div
+  {
+    padding:30px;
+  }
+</style>
+
+</head>
+<body>
+	<div style="height:40px;border:2px solid red;"> </div>
+	<div style="height:90px;border:2px solid blue;"> </div>
+	<div style="height:20px;border:2px solid green;"> </div>
+	<div style="height:80px;border:2px solid violet;"> </div>
+	<script>
+		$(document).ready(function(){
+			var maxh= 0;
+			$("body").children().each(function(){
+			var h = $(this).height();
+			if(h>=maxh)
+			{
+				maxh=h;
+			}
+			});
+			alert("max height is " + maxh);
+		})
+	
+	</script>
+</body>
+</html>
+
