@@ -1,0 +1,272 @@
+@media only screen and (min-width: 700px) {
+            body
+            {
+                width:100%;
+                content: "";
+                clear: both;
+                display: table;
+            }
+            header
+            {
+                background-color: rgb(235, 232, 232);
+                display: flex;
+                width:100%;
+            }
+            .mobilemenu
+            {
+                display: none;
+            }
+            .divlogo
+            {
+                padding: 3% 12% 3% 12%;
+            }
+            .mobile-menulist
+            {
+                display: none;
+            }
+            .nav
+            {
+                width:100%;
+                padding: 4% 0 3% 4%;
+            }
+            ul
+            {
+                list-style-type: none;
+               
+            }
+            li
+            {
+                font-weight: bold;
+                display: inline-block;
+                padding-left: 10%;
+                color: gray;
+            }
+            li:hover
+            {
+                color: #D90052;
+            }
+            .sectionimg
+            {
+                width:100%;
+                background-color: #F8F8F8;
+
+            }
+            .divimg
+            {
+                width:100%;
+                margin:auto;
+                position: relative;
+            }
+            .bgimg
+            {
+                max-width:100%;
+            }
+
+            .circle
+            {
+                position: absolute;
+                top:65%;
+                right:23%;
+            }
+            .circle p{
+                position:absolute;
+                top:40%;
+                right:25%;
+                color: white;
+                font-size: 30px;
+            }
+
+            img{
+                box-sizing: border-box;
+            }
+            .sectionproduct
+            {
+                background-color: rgb(235, 232, 232);
+                display:inline-flex;
+                width: 100%;
+               
+                
+            }
+            .divproduct
+            {
+                padding: 3% 16% 3% 12%;
+            }
+            .productimg
+            {
+                box-sizing: border-box;
+            }
+            .green
+            {
+                width:100%;
+                display:inline-flex;
+                justify-content: space-around;
+                background-color: #A9C000;
+                padding: 3% 0 3% 0;
+
+            }
+            .products, .ourstory, .flavours, .ourlocation
+            {
+                color: white;
+                text-align: center;
+            }
+            footer
+            {
+                background-color: #D90052;
+                padding-top:4%;
+            }
+            .social
+            {
+                margin: 0 auto;
+                
+                width: 20%;
+            }
+            .icons
+            {
+                width:100%;
+                display: inline-flex;
+                justify-content: space-around;
+                padding-bottom: 8%;
+            }
+            .copyright
+            {
+                text-align: center;
+                color: white;
+            }
+        }
+
+        @media only screen and (max-width: 699px) {
+
+            body
+            {
+                max-width:100%;
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            header
+            {
+                width:100%;
+                background-color: rgb(235, 232, 232) ;
+            }
+            .mobilemenu
+            {
+                width: 100%;
+                display: block;  
+                position: relative;          
+            }
+            .mobilemenu::after
+            {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .nav , .mobile-menulist{
+                display: none;
+            }
+
+            
+            .divlogo
+            {
+                text-align: center;
+                padding: 3% 12% 3% 12%;
+            }
+            .sectionimg
+            {
+                width: 100%;
+            }
+            .divimg
+            {
+                width: 100%;
+                margin:auto;
+                position: relative;  
+            }
+            .bgimg
+            {
+                max-width:100%;
+                
+            }
+            .circle
+            {
+                height: 155px;
+                position: relative;
+                text-align: center;
+            }
+            .circleimg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: -2;
+            }
+            .circle p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                line-height: 150px;
+                color: white;
+                font-size: 30px;
+            }
+
+            img{
+                box-sizing: border-box;
+            }
+            .sectionproduct
+            {
+                background-color: rgb(235, 232, 232);
+                
+                width: 100%;  
+            }
+            .divproduct
+            {
+                padding: 3% 16% 3% 12%;
+            }
+            .productimg
+            {
+                box-sizing: border-box;
+                text-align: center;
+            }
+            .green
+            {
+                width:100%;
+                display:block;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                background-color: #A9C000;
+                padding: 3% 0 3% 0;
+
+            }
+            .products, .ourstory, .flavours, .ourlocation
+            {
+                padding: 2% 0;
+                color: white;
+                text-align: center;
+            }
+            footer
+            {
+                width: 100%;
+                background-color: #D90052;
+                padding-top:4%;
+            }
+            .social
+            {
+                margin: 0 auto;
+                text-align: center;
+                width: 50%;
+            }
+            .icons
+            {
+                width:100%;
+                display: inline-flex;
+                justify-content: space-around;
+                padding-bottom: 8%;
+            }
+            .copyright
+            {
+                text-align: center;
+                color: white;
+            }
+            
+
+        }

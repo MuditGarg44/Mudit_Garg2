@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            *
+            {
+                padding: 0;
+                margin: 0;
+            }
+            @media only screen and (min-width: 700px) {
+            body
+            {
+                width:100%;
+                content: "";
+                clear: both;
+                display: table;
+            }
+            header
+            {
+                background-color: rgb(235, 232, 232);
+                display: flex;
+                width:100%;
+            }
+            .mobilemenu
+            {
+                display: none;
+            }
+            .divlogo
+            {
+                padding: 3% 12% 3% 12%;
+            }
+            .mobile-menulist
+            {
+                display: none;
+            }
+            .nav
+            {
+                width:100%;
+                padding: 4% 0 3% 4%;
+            }
+            ul
+            {
+                list-style-type: none;
+               
+            }
+            li
+            {
+                font-weight: bold;
+                display: inline-block;
+                padding-left: 10%;
+                color: gray;
+            }
+            li:hover
+            {
+                color: rgb(207, 80, 144);
+            }
+            .sectionimg
+            {
+                width:100%;
+                background-color: #F8F8F8;
+
+            }
+            .divimg
+            {
+                width:100%;
+                margin:auto;
+                position: relative;
+            }
+            .bgimg
+            {
+                max-width:100%;
+            }
+
+            .circle
+            {
+                position: absolute;
+                top:65%;
+                right:23%;
+            }
+            .circle p{
+                position:absolute;
+                top:40%;
+                right:25%;
+                color: white;
+                font-size: 30px;
+            }
+
+            img{
+                box-sizing: border-box;
+            }
+            .sectionproduct
+            {
+                background-color: rgb(235, 232, 232);
+                display:inline-flex;
+                width: 100%;
+               
+                
+            }
+            .divproduct
+            {
+                padding: 3% 16% 3% 12%;
+            }
+            .productimg
+            {
+                box-sizing: border-box;
+            }
+            .green
+            {
+                width:100%;
+                display:inline-flex;
+                justify-content: space-around;
+                background-color: #A9C000;
+                padding: 3% 0 3% 0;
+
+            }
+            .products, .ourstory, .flavours, .ourlocation
+            {
+                color: white;
+                text-align: center;
+            }
+            footer
+            {
+                background-color: hotpink;
+                padding-top:4%;
+            }
+            .social
+            {
+                margin: 0 auto;
+                
+                width: 20%;
+            }
+            .icons
+            {
+                width:100%;
+                display: inline-flex;
+                justify-content: space-around;
+                padding-bottom: 8%;
+            }
+            .copyright
+            {
+                text-align: center;
+                color: white;
+            }
+        }
+
+        @media only screen and (max-width: 699px) {
+
+            body
+            {
+                max-width:100%;
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            header
+            {
+                width:100%;
+                background-color: rgb(235, 232, 232) ;
+            }
+            .mobilemenu
+            {
+                width: 100%;
+                display: block;  
+                position: relative;          
+            }
+            .mobilemenu::after
+            {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .nav , .mobile-menulist{
+                display: none;
+            }
+
+            
+            .divlogo
+            {
+                text-align: center;
+                padding: 3% 12% 3% 12%;
+            }
+            .sectionimg
+            {
+                width: 100%;
+            }
+            .divimg
+            {
+                width: 100%;
+                margin:auto;
+                position: relative;  
+            }
+            .bgimg
+            {
+                max-width:100%;
+                
+            }
+            .circle
+            {
+                height: 155px;
+                position: relative;
+                text-align: center;
+            }
+            .circleimg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: -2;
+            }
+            .circle p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                line-height: 150px;
+                color: white;
+                font-size: 30px;
+            }
+
+            img{
+                box-sizing: border-box;
+            }
+            .sectionproduct
+            {
+                background-color: rgb(235, 232, 232);
+                
+                width: 100%;  
+            }
+            .divproduct
+            {
+                padding: 3% 16% 3% 12%;
+            }
+            .productimg
+            {
+                box-sizing: border-box;
+                text-align: center;
+            }
+            .green
+            {
+                width:100%;
+                display:block;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                background-color: #A9C000;
+                padding: 3% 0 3% 0;
+
+            }
+            .products, .ourstory, .flavours, .ourlocation
+            {
+                padding: 2% 0;
+                color: white;
+                text-align: center;
+            }
+            footer
+            {
+                width: 100%;
+                background-color: hotpink;
+                padding-top:4%;
+            }
+            .social
+            {
+                margin: 0 auto;
+                text-align: center;
+                width: 50%;
+            }
+            .icons
+            {
+                width:100%;
+                display: inline-flex;
+                justify-content: space-around;
+                padding-bottom: 8%;
+            }
+            .copyright
+            {
+                text-align: center;
+                color: white;
+            }
+            
+
+        }
+
+
+            
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <div class="mobilemenu"> <img src="mobile-menu.png" style="float:right;" id="menuimg"></div>
+            <div class="mobile-menulist" id="mobilemenulist">
+                
+                        <p>Home</p>
+                        <p>About</p>
+                        <p>Blog</p>
+                        <p>Content</p>
+                    
+
+            </div>
+            <div class="divlogo">
+                <img src="logo.png">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>HOME </a></li>
+                    <li>ABOUT</li>
+                    <li>BLOG</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+            
+        </header>
+        <section class="sectionimg">
+            <div class="divimg">
+                <center><img src="bg-home.jpg" class="bgimg"></center> 
+                <div class="circle">
+                    <img src="circle.png" class="circleimg">
+                    <p>Freeze</p>
+                </div>
+            </div>
+        </section>
+        <section class="sectionproduct">
+            <div class="divproduct">
+                <p style="line-height:55px;">New Product</p>
+                <h2 style="color: hotpink;font-size: 30px">The Twist of Healthy Yogurt</h2>
+                <br><br>
+                <p style="line-height:25px;">This website has been designed by<br>
+                 <u>Free Website Templates</u> <br>
+                for you,for free, You can replace all this text with your own text</p>
+            </div>
+            <div class="productimg">
+                <img src="yogurt.jpg">
+            </div>
+        </section>
+        <section class="green">
+            <div class="products"><div><center><img src="1.png"></center></div><div>Our Products</div> </div>
+            <div class="ourstory"><div><center><img src="2.png"></center></div><div>Our Story</div></div>
+            <div class="flavours"><div><center><img src="3.png"></center></div><div>Flavours</div></div>
+            <div class="ourlocation"><div><center><img src="4.png"></center></div><div>Our Location</div></div>
+
+        </section>
+        <footer>
+            <div class="social">
+                <div class="icons">
+                    <div><img src="fb.png"></div>
+                    <div><img src="g+.png"></div>
+                    <div><img src="pin.png"></div>
+                    <div><img src="twitter.png"></div>
+
+                </div>
+                <div class="copyright"> &COPY; 2023 Freeze. All Rights Reserved</div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
