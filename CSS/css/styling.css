@@ -1,4 +1,9 @@
-@media only screen and (min-width: 700px) {
+*
+            {
+                padding: 0;
+                margin: 0;
+            }
+            @media only screen and (min-width: 700px) {
             body
             {
                 width:100%;
@@ -10,7 +15,9 @@
             {
                 background-color: rgb(235, 232, 232);
                 display: flex;
+                justify-content: space-between;
                 width:100%;
+                height:100px;
             }
             .mobilemenu
             {
@@ -18,7 +25,18 @@
             }
             .divlogo
             {
-                padding: 3% 12% 3% 12%;
+                position: relative;
+                /* border:1px solid black; */
+                /* padding: 4% 4% 0 0; */
+                margin-left:140px;
+                width: 140px;
+            }
+            .divlogo img
+            {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
             }
             .mobile-menulist
             {
@@ -26,24 +44,28 @@
             }
             .nav
             {
-                width:100%;
-                padding: 4% 0 3% 4%;
+                /* border:1px solid black; */
+                width:450px;
+                padding: 4% 0 0 0;
+                margin-right:140px;
+                
             }
             ul
             {
                 list-style-type: none;
+                display: flex;
+                justify-content: space-between;
                
             }
             li
             {
                 font-weight: bold;
-                display: inline-block;
-                padding-left: 10%;
+                /* padding-left: 10%; */
                 color: gray;
             }
             li:hover
             {
-                color: #D90052;
+                color: rgb(207, 80, 144);
             }
             .sectionimg
             {
@@ -82,18 +104,21 @@
             .sectionproduct
             {
                 background-color: rgb(235, 232, 232);
-                display:inline-flex;
+                display:flex;
                 width: 100%;
+                justify-content: space-between;
                
                 
             }
             .divproduct
             {
-                padding: 3% 16% 3% 12%;
+                padding: 3% 0 3% 0;
+                margin-left: 12%;
             }
             .productimg
             {
                 box-sizing: border-box;
+                margin-right: 18%;
             }
             .green
             {
@@ -111,7 +136,7 @@
             }
             footer
             {
-                background-color: #D90052;
+                background-color: hotpink;
                 padding-top:4%;
             }
             .social
@@ -246,7 +271,7 @@
             footer
             {
                 width: 100%;
-                background-color: #D90052;
+                background-color: hotpink;
                 padding-top:4%;
             }
             .social

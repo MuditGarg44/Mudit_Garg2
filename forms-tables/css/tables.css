@@ -1,0 +1,83 @@
+table
+{
+    background : url("../assets/floral-seamless-pattern-soft-design-260nw-599229188.jpg");
+    background-size: cover;
+}
+.questiontext p
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.answer > p
+{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+div
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.firsttable tr > td{
+    width: 100px;
+}
+.dummytext{
+}
+.dummytext img
+{
+    float: left;
+    height: 150px;
+    width:150px;
+}
+.dummytext::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.dummytext::before
+{
+    content: "Local Woman Wins Marathon";
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.fifthtable , .fifthtable td
+{
+    width: fit-content;
+    background-image: none;
+    background-color: #CFE2F3;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 18px;
+}
+.main
+{
+    padding : 150px 150px;
+}
+.advertisements
+{
+    height: 340px;
+    background-image: none;
+}
+.advertisements td{
+    padding: 0 28px;
+    
+}
+.banner
+{
+    padding : 40px 0;
+}
+.navigation
+{
+    padding: 10px 0;
+}
+.footer
+{
+    padding: 20px 0;
+}
+
+

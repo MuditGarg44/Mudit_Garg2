@@ -1,0 +1,588 @@
+*
+{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body
+{
+    padding: 0;
+    margin: 0;
+}
+@media only screen and (min-width: 992px) 
+.header
+{
+    width:100%;
+}
+
+.wrapper
+{
+    /* border: 1px solid black; */
+    width:90%;
+    margin: auto;
+}
+.clearfix
+{
+    clear: both;
+    content: "";
+    display: table;
+}
+.topnavigation
+{
+    background-color: rgb(241, 241, 241);
+    width:100%;
+    padding:13px 0;
+    /* border: 2px solid blue; */
+
+}
+.headernav
+{
+    padding:12px 0;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+.headerlist
+{
+    float: left;
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top:2px;
+}
+
+.headerlist div
+{
+    /* border: 1px solid black; */
+    margin:0  15px 0 0; 
+}
+.headerlist div:last-child
+{
+    margin-right:0;
+}
+.social
+{
+    float: right;
+    /* border: 1px solid red; */
+    display: inline-flex;
+}
+.fab
+{
+    color: rgb(5, 202, 5);
+    font-size: 22px;
+} 
+.social div
+{
+    margin: 0 8px;
+}
+.social div:last-child
+{
+    margin-right: 0;
+}
+
+.zoneanddetails
+{
+    padding:25px 0;
+    /* border: 2px solid blue; */
+    width: 100%;
+}
+.zone
+{
+    /* border:1px solid red;    */
+    float: left;
+}
+.zone p{
+    margin : 0 0;
+}
+.zone p:first-child
+{
+    font-size:25px;
+    font-weight: bold;
+    color: rgb(5, 202, 5);
+}
+
+.details
+{
+    float:right;
+    /* border:1px solid red; */
+    display: inline-flex;
+}
+.details > div
+{
+    margin: 0 5px;
+}
+.details > div:last-child
+{
+    margin-right:0;
+}
+.fas
+{
+    color: rgb(5, 202, 5);
+}
+.contact
+{
+    display: inline-flex;
+    /* border:1px solid black; */
+}
+.phoneemail
+{
+    /* border: 1px solid black; */
+}
+
+.location
+{
+    display: inline-flex;
+    /* border:1px solid black; */
+}
+.apply
+{
+    /* border: 1px solid black; */
+}
+.apply .applybtn
+{
+    color: #65C931;
+    background-color: transparent;
+    border: 2px solid #65C931;
+    width:200px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apply .applybtn:hover
+{
+    background-color: #65C931;
+    color: white;
+}
+.menu
+{
+    display: none;
+}
+.contact > div , .location > div
+{
+    margin-right:20px;
+}
+.nav_main_outer
+{
+    background-color: #65C931;  
+}
+.navmain
+{
+    padding: 20px 0;
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.navmain div
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-size: 16px;     */
+    font-weight: bold;
+    color: white;
+    /* border: 1px solid blue; */
+    white-space: nowrap;
+    margin-right: 25px;
+}
+.bgimgsection img
+{
+    width: 100%; 
+    height:600px;
+}
+
+.mobile-bgimgsection{
+    display: none;
+}
+
+.bgimgsection{
+    /* border: 1px solid red; */
+    max-width: 100%;
+    height: fit-content;
+    position: relative;
+
+}
+.bgimgoverlay
+{
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.educationbox
+{
+
+    /* border: 2px solid blue; */
+    width: 60%;
+ 
+}
+.educationbox p{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+.educationbox > p:first-child
+{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.educationbox .buttons
+{
+    width: 45%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.buttons .getstarted
+{
+    padding:15px;
+    font-size: 18px;
+    color: white;
+    background: none;
+    background-color: #65C931;
+    border: 2px solid #65C931;
+    margin-right: 5px;
+    transition: background-color 200ms ease;
+}
+.buttons .getstarted:hover
+{
+    background-color: transparent;
+}
+.buttons .enquiry
+{
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+.buttons .enquiry:hover
+{
+    background-color: white;
+    color: #65C931;
+    transition: background-color 200ms ease-in;
+
+}
+.mobile-cards
+{
+    display: none;
+}
+.cards
+{
+    position: absolute;
+    z-index: 1;
+    bottom: -250px;
+    /* border: 1px solid black; */
+    width:fit-content;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+.cards div
+{
+    color: white;
+    width: 25%;
+    padding:15px;
+    text-align: center;
+    /* border:1px solid red; */
+}
+.cards .students
+{
+    background-color: #6743FF;
+}
+.cards .community
+{
+    background-color: #FF5C5E;
+}
+.cards .curriculum
+{
+    background-color: #A7E866;
+}
+.cards .calendar
+{
+    background-color: #FB7F27;
+}
+.cardfonts
+{
+    color: rgb(48, 48, 48);
+    font-size: 30px;
+}
+
+.welcomesection
+{
+    display: none;
+}
+
+
+/* -----------------------------MOBILE SITE---------------------------- */
+
+@media only screen and (max-width: 991px)
+{
+
+.topnavigation
+{
+    display: none;
+}
+.zoneanddetails
+{
+    padding:25px 0;
+    /* border: 2px solid blue; */
+    width: 100%;
+}
+.zone
+{
+    /* border:1px solid red;    */
+    float: left;
+}
+.zone p{
+    margin : 0 0;
+}
+.zone p:first-child
+{
+    font-size:25px;
+    font-weight: bold;
+    color: rgb(5, 202, 5);
+}
+.details
+{
+    float:right;
+    /* border:1px solid red; */
+    display: flex;
+}
+.details > div
+{
+    margin: 0 5px;
+}
+.details > div:last-child
+{
+    margin-right:0;
+}
+.contact
+{
+    display: none;
+}
+.phoneemail
+{
+    display: none;
+}
+
+.location
+{
+    display: none;
+}
+.apply
+{
+    /* border: 1px solid black; */
+}
+.apply .applybtn
+{
+    color: #65C931;
+    background-color: transparent;
+    border: 2px solid #65C931;
+    width:200px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apply .applybtn:hover
+{
+    background-color: #65C931;
+    color: white;
+}
+.menu
+{
+    display: block;
+    width:20px;
+    padding: 6px 0 6px 0;
+    cursor: pointer;
+
+}
+.menu span
+{
+    display:block;
+    width: 100%;
+    background: black;
+    height: 2px;
+    margin: 5px 0;
+}
+.nav_main_outer
+{
+    display: none;
+}
+.bgimgsection
+{
+    display: none;
+}
+
+.mobile-bgimgsection 
+{
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('../assets/banner-image.jpg');
+    background-position: center;
+    max-width: 100%;
+    height: 600px;
+}
+
+
+
+
+.educationbox
+{
+
+    /* border: 2px solid blue; */
+    width: 60%;
+    margin:auto;
+ 
+}
+.educationbox p{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+.educationbox > p:first-child
+{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.educationbox .buttons
+{
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.buttons .getstarted
+{
+    padding:15px;
+    font-size: 18px;
+    color: white;
+    background: none;
+    background-color: #65C931;
+    border: 2px solid #65C931;
+    margin-right: 5px;
+    transition: background-color 200ms ease;
+}
+.buttons .getstarted:hover
+{
+    background-color: transparent;
+}
+.buttons .enquiry
+{
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+.buttons .enquiry:hover
+{
+    background-color: white;
+    color: #65C931;
+    transition: background-color 200ms ease-in;
+
+}
+.cards{
+    display: none;
+}
+.mobile-cards
+{
+    /* border: 1px solid black; */
+    display: block;
+    width: 80%;
+}
+.mobile-cards div
+{
+    color: white;
+    padding:25px;
+    text-align: center;
+    /* border:1px solid red; */
+    height: 300px;
+}
+.mobile-cards .students
+{
+    background-color: #6743FF;
+}
+.mobile-cards .community
+{
+    background-color: #FF5C5E;
+}
+.mobile-cards .curriculum
+{
+    background-color: #A7E866;
+}
+.mobile-cards .calendar
+{
+    background-color: #FB7F27;
+}
+.cardfonts
+{
+    color: rgb(48, 48, 48);
+    font-size: 30px;
+}
+.welcomesection
+{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    padding: 30px 25px;
+}
+.welcomesection p
+{
+    text-align: center;
+}
+.welcometext > p:first-child
+{
+    font-size: 35px;
+    font-weight: bold;
+}
+.numbers
+{
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.numbers ul
+{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.numbers ul li
+{
+    max-width: 157.7px;
+    width: 100%;
+    list-style-type:none;
+    /* border: 1px solid red; */
+}
+.numbers ul li > p:first-child
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #65C931;
+}
+}
+
+
+
+
+
