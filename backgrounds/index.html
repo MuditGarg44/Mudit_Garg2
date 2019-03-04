@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container clearfix">
+            <p class="questiontext">1. Create a HTML page which has a container div. This div should take height and width of the page.Add a fixed background image to this div which should cover the whole page and should not be repeated. </p>
+            <p class="answertext"><span class="answer"> Answer : </span>  A div with class name container included with a fixed,centered, and fully covered background image.</p>
+
+            <p class="questiontext">2. Create a content div(height and width 500px respectively) inside the container Add a background image  to the content div which should also be horizontally and vertically centered. </p>
+            <p class="answertext"><span class="answer"> Answer : </span>A div with class name content added with a background image which is horizontally and vertically aligned. div is marked with red border color</p>
+            <div class="content">
+
+            </div>
+            <p class="questiontext">3. Add p tag inside the content div. The text of the p tag  should overflow content height and therefore there must be a scroll on the content div. The background image of the content should scroll with the text.</p>
+            <p class="answertext"><span class="answer">Answer : </span> Height of content(red border) div is 500px. Overall height of sample text inside exceeds that of content div, so a scroll bar is added using overflow-y property. Background image is then set to scroll with the content div text using property background-attachment:local; </p>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur veritatis commodi sed, architecto maiores est asperiores excepturi in autem eligendi tempore alias eius voluptatum praesentium fuga explicabo esse adipisci reprehenderit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, dolor quasi quibusdam officia, veritatis amet architecto corrupti accusamus dolores repellat blanditiis rerum cum, voluptatum illum cumque sapiente quod delectus vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente maiores dicta numquam officia rerum nesciunt magni soluta voluptatibus, sequi quis? Dicta laudantium deserunt beatae hic eum libero dolores eveniet enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores quibusdam culpa nemo porro quo. Aliquam accusamus eligendi iste, delectus tempora nisi culpa voluptate beatae saepe rerum quibusdam est earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, provident consequuntur. Maiores culpa corrupti quod. Doloremque, odit quasi labore nisi animi quo dignissimos assumenda rem dolor quae corporis debitis dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio maxime vitae, sed error aperiam tenetur iusto autem enim quaerat voluptatum obcaecati sunt modi quas architecto laudantium! Incidunt vitae vel pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptas. Officia dignissimos repudiandae inventore voluptatem culpa, beatae enim, aperiam in sunt quo rerum hic commodi cupiditate cumque. Iure, laudantium repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum ab asperiores, earum soluta exercitationem dolore nisi sed dignissimos libero quas dicta, facilis numquam, aut totam fugit quam ullam voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas pariatur saepe omnis harum, animi natus nostrum est qui iste odio consectetur blanditiis ad numquam rerum aut, rem cupiditate inventore illo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dicta molestiae non, eum nobis officiis, tenetur accusamus, unde iure aut vel aspernatur voluptatibus ullam magni quaerat consectetur rem suscipit perspiciatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, fugiat? Nam doloribus, nesciunt iste alias maxime ipsum eius ex quaerat, quod, voluptatibus ad nemo labore. Ducimus dolores veniam sint provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit molestias minima ut perspiciatis nulla modi? Consequuntur debitis accusantium, cumque voluptatibus dolore ea exercitationem dolor nam odio, laborum reiciendis veritatis ab. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi itaque soluta aspernatur quasi cumque mollitia ipsum eos facilis nobis sapiente nisi dolorem voluptatum, debitis accusamus nemo repellat corporis libero.</p>
+            </div>
+
+            <p class="questiontext">4. Add background color red to the p tag. The color should be a hex value.</p>
+            <p class="answertext"><span class="answer">Answer : </span> Red Background color given to p tag in hex value (below).</p>
+            <p class="red"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iure facere, aliquid nesciunt numquam quibusdam adipisci laudantium. Esse dolore vitae, ratione, pariatur neque officia suscipit iure, quis amet temporibus nulla?</p>
+        
+
+            <p class="questiontext">6. Create a div with height and width 100px. Animate id twice for total 4 seconds. It should change the opacity of the element from 1 to 0 and then to 0.5. Animation should start after 3 seconds.</p>
+            <p class="answertext"><span class="answer">Answer : </span> Animation below is delayed by 3 seconds. It includes 2 transitions that are of 2 seconds each making total upto 4 seconds.</p>
+            <div class="animation">
+
+            </div>
+
+            <p class="questiontext">7. Create a div with height 100px and width 200px respectively. It’s background-color should be #ff00ff with a 1px solid border coloured #000. On active change it’s height to 200px and width to 100px. Background-color should be #000 with a 2px solid border colored #ff00ff. Also scale it to thrice it’s height and twice its width. The whole process should have transition for all the above mentioned properties which should run for 3 seconds.</p>
+            <p class="answertext"><span class="answer">Answer : </span>Transition will run on mouse down (active state). Its height and width will change, background and border color will change and div will we scaled. It has been given some margin so that it can be seen when its scaled in transition period. There was an issue where transition will run for background color on page load without even clicking the div, which in first place shouldn't have, but on looking up on internet for this, i have got to know that its a bug in chrome browsers, and to resolve this, an extra css class and jquery has to be inlcuded in the webpage. </p>
+            <p>P.S : Transition could have been included in psuedo class itself, but then it wouldn't run on mouse out</p>
+            <div class="transition">
+
+            </div>
+
+
+            <p class="questiontext">5. Add a footer to the container div which should contain 3 span tags having background image of facebook , instagram and twitter icons in the same order as written. </p>
+            <p class="answertext"><span class="answer">Answer : </span> Following images are taken from a sprite image given to us and they are positioned in 3 different spans using css background-position properties <br> P.S : this question is included at last to use footer tag</p>
+            <footer>
+                <span class="facebook"></span>
+                <span class="instagram"></span>
+                <span class="twitter"></span>
+            </footer>
+        </div>
+    </body>
+</html>
