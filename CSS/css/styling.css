@@ -2,8 +2,26 @@
             {
                 padding: 0;
                 margin: 0;
+                box-sizing: border-box;
             }
             @media only screen and (min-width: 700px) {
+                .container
+                {
+                    width:80%;
+                    margin: auto;
+                }
+                header
+                {
+                    width: 100%;
+                    padding: 40px 0;
+                    background-color: rgb(235, 232, 232);
+
+                }
+                header .container
+                {
+                    display: flex;
+                    justify-content: space-between;
+                }
             body
             {
                 width:100%;
@@ -11,33 +29,12 @@
                 clear: both;
                 display: table;
             }
-            header
-            {
-                background-color: rgb(235, 232, 232);
-                display: flex;
-                justify-content: space-between;
-                width:100%;
-                height:100px;
-            }
+
             .mobilemenu
             {
                 display: none;
             }
-            .divlogo
-            {
-                position: relative;
-                /* border:1px solid black; */
-                /* padding: 4% 4% 0 0; */
-                margin-left:140px;
-                width: 140px;
-            }
-            .divlogo img
-            {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-            }
+            
             .mobile-menulist
             {
                 display: none;
@@ -45,25 +42,25 @@
             .nav
             {
                 /* border:1px solid black; */
-                width:450px;
-                padding: 4% 0 0 0;
-                margin-right:140px;
-                
-            }
-            ul
-            {
+                width:500px;
+                padding: 0 0 0 10px;
+                /* margin-right:140px; */
                 list-style-type: none;
                 display: flex;
                 justify-content: space-between;
-               
+                align-items: center;
+
+                
             }
-            li
+
+            .nav li a
             {
                 font-weight: bold;
                 /* padding-left: 10%; */
                 color: gray;
+                text-decoration: none;
             }
-            li:hover
+            .nav li a:hover
             {
                 color: rgb(207, 80, 144);
             }
@@ -75,13 +72,11 @@
             }
             .divimg
             {
-                width:100%;
+                width:1126px;
+                height:660px;
+                /* border:1px solid black; */
                 margin:auto;
                 position: relative;
-            }
-            .bgimg
-            {
-                max-width:100%;
             }
 
             .circle
@@ -89,11 +84,14 @@
                 position: absolute;
                 top:65%;
                 right:23%;
+                /* border: 1px solid black; */
             }
             .circle p{
-                position:absolute;
-                top:40%;
-                right:25%;
+                position: absolute;;
+    
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
                 color: white;
                 font-size: 30px;
             }
@@ -104,21 +102,22 @@
             .sectionproduct
             {
                 background-color: rgb(235, 232, 232);
-                display:flex;
-                width: 100%;
-                justify-content: space-between;
-               
-                
+ 
+            }
+            .sectionproduct .container
+            {
+                display: flex;
+                justify-content: space-between;  
             }
             .divproduct
             {
-                padding: 3% 0 3% 0;
-                margin-left: 12%;
+                /* padding: 3% 0 3% 0; */
+                /* margin-left: 12%; */
             }
             .productimg
             {
-                box-sizing: border-box;
-                margin-right: 18%;
+                /* box-sizing: border-box; */
+                /* margin-right: 18%; */
             }
             .green
             {
@@ -169,33 +168,67 @@
                 display: table;
             }
 
+            .container
+            {
+                width:80%;
+                margin: auto;
+                /* border: 1px solid black; */
+            }
             header
             {
-                width:100%;
-                background-color: rgb(235, 232, 232) ;
+                width: 100%;
+                padding: 40px 0;
+                background-color: rgb(235, 232, 232);
+
+            }
+            header .container
+            {
+                display: flex;
+                justify-content: space-between;
             }
             .mobilemenu
             {
-                width: 100%;
+                width: fit-content;
                 display: block;  
                 position: relative;          
             }
-            .mobilemenu::after
+            .mobilemenu
             {
-                content: "";
-                clear: both;
-                display: table;
+                width: fit-content;
+                display: flex;  
+                align-items: center;
+                position: relative;          
             }
-            .nav , .mobile-menulist{
+            .mobilemenu ul
+            {
+                display:none;
+                list-style-type: none;
+                position: absolute;
+                width:100px;
+                right:0;
+                top:100%;
+                z-index: 1;
+            }
+            .mobilemenu ul li
+            {
+                background-color: rgba(0, 0, 0, 0.45);
+                padding:10px 10px;
+            }
+            .mobilemenu li a
+            {
+                text-decoration: none;
+                color: white;
+            }
+            .mobilemenu:hover  > ul {
+                display: block;
+            }
+
+            .nav {
                 display: none;
             }
 
             
-            .divlogo
-            {
-                text-align: center;
-                padding: 3% 12% 3% 12%;
-            }
+
             .sectionimg
             {
                 width: 100%;
