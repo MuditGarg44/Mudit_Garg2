@@ -1,0 +1,827 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width : 600px)
+{
+    .banner {
+        background: url("../assets/banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-width:268px;
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        /* border : 1px solid red; */
+        /* z-index: -2; */
+    }
+    .banner::after
+    {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top : 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(75,75,93,0.75);
+    }
+    .container
+    {
+        min-width: 268px;
+        width: 90%;
+        margin: auto;
+    }
+    .banner .container
+    {
+        /* padding: 0 50px; */
+        /* border: 1px solid red; */
+        border-bottom: 2px solid gray;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+    }
+
+    
+    .projection
+    {
+        color: white;
+        /* border: 1px solid red; */
+        padding:50px 0;
+    }
+    .desktopnav
+    {
+        display: none;
+    }
+
+    .mobile-menu
+    {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+    .mobile-menu:hover > .mobile-nav
+    {
+        display: block;
+    }
+    .mobile-nav
+    {
+        display:none;
+        list-style-type: none;
+        position: absolute;
+        right:0;
+        top:100%;
+    }
+    .mobile-nav li
+    {
+        background-color: rgba(0, 0, 0, 0.45);
+        padding:10px 10px;
+    }
+    .mobile-nav li a
+    {
+        text-decoration: none;
+        color: white;
+    }
+    .sectionBox
+    {
+        list-style-type: none;
+        min-width:268px;
+        width: 100%;
+        border: 1px solid transparent;
+        color: white;
+        margin: 40px auto;
+        position: relative;
+        z-index: 2;
+    }
+    .sectionBox > li
+    {
+        text-align: center;
+        margin: 50px 0;
+        width: 100%;
+    }
+    .sectionBox > li:first-child
+    {
+        font-size: 25px;
+    }
+    .sublist
+    {
+        list-style-type: none;
+        /* display: flex;
+        justify-content: center; */
+        width: 100%;
+    }
+    
+    .sublist li
+    {
+        margin: 20px 0;
+        padding: 0 20px;
+        width:100%;
+        text-align: center;
+        /* border-right:2px solid gray; */
+    }
+    .sublist > li:last-child
+    {
+        border-right: none;
+    }
+    .sublist li span
+    {
+        display: block;
+        margin-bottom:10px;
+        
+    }
+    .sublist > li span:last-child
+    {
+        margin-bottom: 0;
+    }
+    .fas
+    {
+        color: rgb(1, 192, 1);
+        font-size: 40px;
+    }
+    .sectionBox li .getstarted
+    {
+        border : 2px solid rgb(1, 192, 1);
+        border-radius: 25px;
+        width: 175px;
+        height:35px;
+        background: transparent;
+        color: rgb(2, 155, 2);
+        /* transition: background-color 200ms; */
+    }
+    .sectionBox li .getstarted:hover
+    {
+        background-color: rgba(3, 155, 3, 0.342);
+    }
+    
+    .projects
+    {
+        margin: 50px 0 100px 0;
+        min-width: 268px;
+        width: 100%
+        display: block;
+        /* position: relative; */
+        /* justify-content: space-around; */
+    }
+    
+    .project-1 , .project-2 
+    {
+        width:95%;
+        margin : auto;
+        /* border: 1px solid black; */
+    }
+    .project-1 ul , .project-2 ul
+    {
+        list-style-type: none;
+    } 
+    .project-1 ul li , .project-2 ul li
+    {
+        text-decoration: none;
+        text-align: center;
+        color: rgb(189, 182, 182);
+    }
+    .caption
+    {
+        padding : 3% 0 10% 0;
+        font-size : 20px;
+        color: rgb(80, 79, 79) !important;
+    }
+    .project-1 ul li img, .project-2 ul li img
+    {
+        border-radius: 50%;
+    }
+    .project-1 ul li button , .project-2 ul li button
+    {
+        border-radius: 25px;
+        width:170px;
+        height:30px;
+        margin: 30px 0;
+        background: transparent;
+        color: rgb(2, 155, 2);
+        border : 2px solid rgb(1, 192, 1);
+    
+    }
+    .project-1 button:hover , .project-2 button:hover
+    {
+        background-color: rgba(3, 155, 3, 0.342);
+    }
+.feedback
+{
+    padding: 30px 0;
+    background: #5bcc92;
+    min-width: 268px;
+    width: 100%;
+    
+}
+.feedback > .container >  div
+{
+    color: white;
+}
+.feedback > .container  > ul
+{
+    list-style-type: none;
+    width: 100%;
+    /* display:flex;
+    justify-content: space-between; */
+    margin: 20px 0;
+}
+.feedback > .container > ul > li{
+    width: 100%;
+}
+.feedback > .container > ul > li > div:first-child
+{
+    padding: 7px 0;
+    color: white;
+}
+.getintouch{
+    text-align: center;
+    font-size: 30px;
+    padding:40px 0;
+}
+.nametxt , .emailtxt
+{
+    border-radius: 10px;
+    width: 100%;
+    background-color: transparent;
+    height : 40px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border : 2px solid #81d6a9;
+}
+.messagebox
+{
+    padding: 10px 0;
+}
+.messagetxt
+{
+    width: 100%;
+    height:200px;
+    padding:10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border : 2px solid #81d6a9;
+    /* resize: none;  */
+}
+.feedback .container > div:last-child
+{
+    text-align: center;
+    padding:10px 0;
+}
+.messagebtn
+{
+    width:200px;
+    height: 40px;
+    font-size:13px;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    background: transparent;
+}
+}
+
+@media only screen and (min-width : 600px) and (max-width : 768px)
+{
+    .banner {
+        background: url("../assets/banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width:100%;
+        height: fit-content;
+        position: relative;
+        /* border : 1px solid red; */
+        /* z-index: -2; */
+    }
+    .banner::after
+    {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top : 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(75,75,93,0.75);
+    }
+    .container
+    {
+        width: 90%;
+        margin: auto;
+    }
+    .banner .container
+    {
+        /* padding: 0 50px; */
+        /* border: 1px solid red; */
+        border-bottom: 2px solid gray;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+    }
+
+    
+    .projection
+    {
+        color: white;
+        /* border: 1px solid red; */
+        padding:50px 0;
+    }
+    .desktopnav
+    {
+        display: none;
+    }
+
+    .mobile-menu
+    {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+    .mobile-menu:hover > .mobile-nav
+    {
+        display: block;
+    }
+    .mobile-nav
+    {
+        display:none;
+        list-style-type: none;
+        position: absolute;
+        right:0;
+        top:100%;
+    }
+    .mobile-nav li
+    {
+        background-color: rgba(0, 0, 0, 0.45);
+        padding:10px 10px;
+    }
+    .mobile-nav li a
+    {
+        text-decoration: none;
+        color: white;
+    }
+    .sectionBox
+    {
+        list-style-type: none;
+        width:90%;
+        border: 1px solid transparent;
+        color: white;
+        margin: 40px auto;
+        position: relative;
+        z-index: 2;
+    }
+    .sectionBox > li
+    {
+        text-align: center;
+        margin: 50px 0;
+        width: 100%;
+    }
+    .sectionBox > li:first-child
+    {
+        font-size: 55px;
+    }
+    .sublist
+    {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .sublist li
+    {
+        margin: 20px 0;
+        padding: 0 20px;
+        width:33%;
+        text-align: center;
+        border-right:2px solid gray;
+    }
+    .sublist > li:last-child
+    {
+        border-right: none;
+    }
+    .sublist li span
+    {
+        display: block;
+        margin-bottom:10px;
+        
+    }
+    .sublist > li span:last-child
+    {
+        margin-bottom: 0;
+    }
+    .fas
+    {
+        color: rgb(1, 192, 1);
+        font-size: 40px;
+    }
+    .sectionBox li .getstarted
+    {
+        border : 2px solid rgb(1, 192, 1);
+        border-radius: 25px;
+        width: 175px;
+        height:35px;
+        background: transparent;
+        color: rgb(2, 155, 2);
+        /* transition: background-color 200ms; */
+    }
+    .sectionBox li .getstarted:hover
+    {
+        background-color: rgba(3, 155, 3, 0.342);
+    }
+    
+    .projects
+    {
+        margin: 50px 0 100px 0;
+        width: 100%;
+        display: block;
+        /* position: relative; */
+        /* justify-content: space-around; */
+    }
+    
+    .project-1 , .project-2 
+    {
+        width:45%;
+        margin : auto;
+        /* border: 1px solid black; */
+    }
+    .project-1 ul , .project-2 ul
+    {
+        list-style-type: none;
+    } 
+    .project-1 ul li , .project-2 ul li
+    {
+        text-decoration: none;
+        text-align: center;
+        color: rgb(189, 182, 182);
+    }
+    .caption
+    {
+        padding : 3% 20% 10% 20%;
+        font-size : 30px;
+        color: rgb(80, 79, 79) !important;
+    }
+    .project-1 ul li img, .project-2 ul li img
+    {
+        border-radius: 50%;
+    }
+    .project-1 ul li button , .project-2 ul li button
+    {
+        border-radius: 25px;
+        width:170px;
+        height:30px;
+        margin: 30px 0;
+        background: transparent;
+        color: rgb(2, 155, 2);
+        border : 2px solid rgb(1, 192, 1);
+    
+    }
+    .project-1 button:hover , .project-2 button:hover
+    {
+        background-color: rgba(3, 155, 3, 0.342);
+    }
+    .feedback
+{
+    padding: 30px 0;
+    background: #5bcc92;
+}
+.feedback > .container >  div
+{
+    color: white;
+}
+.feedback > .container  > ul
+{
+    list-style-type: none;
+    width: 100%;
+    /* display:flex;
+    justify-content: space-between; */
+    margin: 20px 0;
+}
+.feedback > .container > ul > li{
+    width: 100%;
+}
+.feedback > .container > ul > li > div:first-child
+{
+    padding: 7px 0;
+    color: white;
+}
+.getintouch{
+    text-align: center;
+    font-size: 30px;
+    padding:40px 0;
+}
+.nametxt , .emailtxt
+{
+    border-radius: 10px;
+    width: 100%;
+    background-color: transparent;
+    height : 40px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border : 2px solid #81d6a9;
+}
+.messagebox
+{
+    padding: 10px 0;
+}
+.messagetxt
+{
+    width: 100%;
+    height:200px;
+    padding:10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border : 2px solid #81d6a9;
+    /* resize: none;  */
+}
+.feedback .container > div:last-child
+{
+    text-align: center;
+    padding:10px 0;
+}
+.messagebtn
+{
+    width:200px;
+    height: 40px;
+    font-size:13px;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    background: transparent;
+}
+}
+
+
+@media only screen and (min-width: 768px){
+
+.banner {
+    background: url("../assets/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width:100%;
+    height: fit-content;
+    position: relative;
+    /* border : 1px solid red; */
+    /* z-index: -2; */
+}
+.banner::after
+{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top : 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(75,75,93,0.75);
+}
+.container
+{
+    width : 90%;
+    margin: auto;
+}
+.banner .container
+{
+    /* padding: 0 50px; */
+    /* border: 1px solid red; */
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.projection
+{
+    color: white;
+    /* border: 1px solid red; */
+    padding:50px 0;
+}
+.desktopnav
+{
+    padding: 50px 0;
+    list-style-type: none;
+    display: flex;
+}
+.desktopnav li a
+{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.desktopnav > li:last-child a
+{
+    padding: 0 0 0 10px;
+}
+.mobile-menu
+{
+    display: none;
+}
+.sectionBox
+{
+    list-style-type: none;
+    width:90%;
+    border: 1px solid transparent;
+    color: white;
+    margin: 40px auto;
+    position: relative;
+    z-index: 2;
+}
+.sectionBox > li
+{
+    text-align: center;
+    margin: 50px 0;
+    width: 100%;
+}
+.sectionBox > li:first-child
+{
+    font-size: 55px;
+}
+.sublist
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sublist li
+{
+    margin: 20px 0;
+    padding: 0 20px;
+    width:33%;
+    text-align: center;
+    border-right:2px solid gray;
+}
+.sublist > li:last-child
+{
+    border-right: none;
+}
+.sublist li span
+{
+    display: block;
+    margin-bottom:10px;
+    
+}
+.sublist > li span:last-child
+{
+    margin-bottom: 0;
+}
+.fas
+{
+    color: rgb(1, 192, 1);
+    font-size: 40px;
+}
+.sectionBox li .getstarted
+{
+    border : 2px solid rgb(1, 192, 1);
+    border-radius: 25px;
+    width: 175px;
+    height:35px;
+    background: transparent;
+    color: rgb(2, 155, 2);
+    /* transition: background-color 200ms; */
+}
+.sectionBox li .getstarted:hover
+{
+    background-color: rgba(3, 155, 3, 0.342);
+}
+
+.projects
+{
+    margin: 100px 0 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-1 , .project-2 
+{
+    width:35%;
+    /* border: 1px solid black; */
+}
+.project-1 ul , .project-2 ul
+{
+    list-style-type: none;
+} 
+.project-1 ul li , .project-2 ul li
+{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(189, 182, 182);
+}
+.caption
+{
+    padding : 3% 20% 10% 20%;
+    font-size : 30px;
+    color: rgb(80, 79, 79) !important;
+}
+.project-1 ul li img, .project-2 ul li img
+{
+    border-radius: 50%;
+}
+.project-1 ul li button , .project-2 ul li button
+{
+    border-radius: 25px;
+    width:170px;
+    height:30px;
+    margin: 30px 0;
+    background: transparent;
+    color: rgb(2, 155, 2);
+    border : 2px solid rgb(1, 192, 1);
+
+}
+.project-1 button:hover , .project-2 button:hover
+{
+    background-color: rgba(3, 155, 3, 0.342);
+}
+
+.feedback
+{
+    padding: 30px 0;
+    background: #5bcc92;
+}
+.feedback > .container >  div
+{
+    color: white;
+}
+.feedback > .container  > ul
+{
+    list-style-type: none;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.feedback > .container > ul > li{
+    width: 47%;
+}
+.feedback > .container > ul > li > div:first-child
+{
+    padding: 7px 0;
+    color: white;
+}
+.getintouch{
+    text-align: center;
+    font-size: 30px;
+    padding:40px 0;
+}
+.nametxt , .emailtxt
+{
+    border-radius: 10px;
+    width: 100%;
+    background-color: transparent;
+    height : 40px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border : 2px solid #81d6a9;
+}
+.messagebox
+{
+    padding: 10px 0;
+}
+.messagetxt
+{
+    width: 100%;
+    height:200px;
+    padding:10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border : 2px solid #81d6a9;
+    /* resize: none;  */
+}
+.feedback .container > div:last-child
+{
+    text-align: center;
+    padding:10px 0;
+}
+.messagebtn
+{
+    width:200px;
+    height: 40px;
+    font-size:13px;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    background: transparent;
+}
+
+}
+
+
+
+
+
